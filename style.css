@@ -1,0 +1,21 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr 2fr 2fr 2fr 2fr;
+    grid-template-rows: auto;
+    border: solid 5px black;
+}
+.nav-logo {
+    grid-row: 1;
+    border: solid 3px black;
+    text-align: center;
+}
+.nav-text-logo {
+    grid-row: 1;
+    border: solid 3px black;
+    text-align: center;
+}
+.nav-year {
+    grid-row: 1;
+    border: solid 3px black;
+    text-align: center;
+}
