@@ -30,6 +30,11 @@
     grid-column: 1 / span 7;
     text-align: center;
     border: solid 3px black;
+    background-image: url("images/homepage/homeheaderimagev2.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .button-container {
     grid-row: 3;
@@ -66,3 +71,4 @@
     text-align: center;
     border: solid 3px white;
 }
+
