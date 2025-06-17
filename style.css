@@ -30,19 +30,33 @@
     grid-column: 1 / span 7;
     text-align: center;
     border: solid 3px black;
-    background-image: url("images/homepage/homeheaderimagev2.png");
+    background-image: url("images/homepage/homeheaderimagev5.png");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    justify-content: center;
+    align-items: center;
+
+}
+.logo-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 80px;
 }
 .button-container {
     grid-row: 3;
     grid-column: 1 /span 7;
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr 2fr 2fr 2fr 1fr;
+    grid-template-columns: 1fr 4fr 4fr 4fr 4fr 4fr 1fr;
     grid-template-rows: 1fr;
     border: solid 3px white;
+    column-gap: 1.3vw;
 }
 .blank-left-space {
     grid-row: 1;
