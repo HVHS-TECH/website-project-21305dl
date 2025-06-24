@@ -37,6 +37,36 @@
 .nav-year-text:hover {
     transform: scale(1.1);
 }
+.dropdown {
+    display: inline-block;
+}
+.dropdown-button {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:black;
+    transition: display 0.4s ease;
+}
+.dropdown-content a {
+    color: white;
+    padding: 5px 10px;
+    display: block;
+    text-decoration: none;
+    transition: background-color 0.4s ease;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 101%;
+}
+.dropdown-content a:hover {
+    background-color:#2C2C2C;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 .title {
     grid-row: 2;
     grid-column: 1 / span 7;
@@ -59,7 +89,7 @@
     color: white;
     font-weight: 600;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 80px;
+    font-size: 500%;
 }
 .button-container {
     grid-row: 3;
