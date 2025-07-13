@@ -1,10 +1,8 @@
 .container {
-  display: grid;
-  grid-template-columns: 1fr 3fr 2fr 2fr 2fr 2fr 2fr;
-  grid-template-rows: 0.1fr 1.2fr 0.5fr 2fr 0.1fr;
-  border: none;
-  margin: 0px;
-  padding: 0px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr 2fr 2fr 2fr 2fr;
+    grid-template-rows: 0.1fr 2fr 0.5fr 9fr;
+    border: solid 5px black;
 }
 .nav-logo {
   grid-row: 1;
@@ -21,76 +19,35 @@
   background-color: black;
 }
 .nav-year {
-  grid-row: 1;
-  border: none;
-  text-align: center;
-  background-color: rgb(0, 0, 0);
-  padding-top: 5px;
-  transition: background-color 0.4s ease;
-}
-.nav-year:hover {
-  background-color: #2C2C2C;
-}
-.nav-year-text {
-  transition: transform 0.4s ease;
-}
-.nav-year-text:hover {
-  transform: scale(1.1);
-}
-.dropdown {
-  display: inline-block;
-}
-.dropdown-button {
-  margin-bottom: 1rem;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-}
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color:black;
-  transition: display 0.4s ease;
-}
-.dropdown-content a {
-  color: white;
-  padding: 5px 10px;
-  display: block;
-  width: 10.6rem;
-  text-decoration: none;
-  transition: background-color 0.4s ease;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 1rem;
-}
-.dropdown-content a:hover {
-  background-color:#2C2C2C;
-}
-.dropdown:hover .dropdown-content {
-  display: block;
+    grid-row: 1;
+    border: solid 3px black;
+    text-align: left;
+    background-color: rgb(0, 0, 0);
+    padding-top: 5px;
 }
 .title {
-  grid-row: 2;
-  grid-column: 1 / span 7;
-  text-align: center;
-  border: none;
-  background-image: url("images/homepage/homeheaderimagev5.png");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  justify-content: center;
-  align-items: center;
+    grid-row: 2;
+    grid-column: 1 / span 7;
+    text-align: center;
+    border: solid 3px black;
+    background-image: url("images/homepage/homeheaderimagev5.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
 
 }
 .logo-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-weight: 600;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 500%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 80px;
 }
 .button-container {
   grid-row: 3;
@@ -108,19 +65,13 @@
   border: solid 3px white;
 }
 .year-button {
-  grid-row: 1;
-  text-align: center;
-  padding-top: 20px;
-  border: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-}
-.year-button:hover{  
-  transform: scale(1.05);
-  opacity: 0.81;
-  cursor: pointer;
+    grid-row: 1;
+    text-align: center;
+    padding-top: 20px;
+    border: solid 3px white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .blank-right-space {
   grid-row: 1;
@@ -135,53 +86,3 @@
   border: solid 3px white;
 }
 
-.main-text-header {
-  padding-top: 2%;
-  color: black;
-  font-weight: 600;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 350%;
-}
-.header-line {
-  border-radius: 5px;
-  border: 3px solid black;
-  width: 65rem;
-}
-.main-text {
-  color: black;
-  font-weight: 600;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 150%;
-  padding: 0;
-  margin-left: 10rem;
-  margin-right: 10rem;
-}
-.small-line {
-  border-radius: 5px;
-  border: 3px solid black;
-  width: 45rem;
-  margin-bottom: 3rem;
-  margin-top: 2rem;
-}
-.footer {
-  background-color: black;
-  grid-column: 1 /span 7;
-  margin-top: 10rem;
-  border: 3px solid black;
-  padding-left: 2rem;
-  padding-bottom: 2rem;
-}
-.footer-title-text {
-  color: white;
-  font-weight: 600;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 200%;
-}
-.footer-text {
-  color: rgb(255, 255, 255);
-  font-weight: 400;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 120%;
-  padding-right: 2rem;
-  text-align: right;
-}
