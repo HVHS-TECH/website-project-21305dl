@@ -119,6 +119,7 @@
   background-size: cover;
   justify-content: center;
   align-items: center;
+  z-index: -1;
 
 }
 .logo-text {
@@ -283,10 +284,15 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
   }
+  .dropdown-content {
+    text-align: center;
+    width: 90vw;
+  }
   .dropdown-content a {
-    font-size: 5vw;
-    width: 50%;
-    height: 1rem;
+    font-size: 6.5vw;
+    width: 94.4%;
+    height: 10vh;
+    z-index: 9;
   }
   .nav-ynine {
     grid-column: 2 /span 2;
@@ -311,9 +317,32 @@
   .nav-text-logo {
     display: none;
   }
-  .dropdown-content a {
-    font-size: 2vw;
-    width: 17vw;
+  .button-container {
+    grid-template-columns: 1fr repeat(6, 4fr) 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .year-button {
+    padding: 4px;
+  }
+  .year9btn {
+    grid-column: 2 /span 2;
+    grid-row: 1;
+  }
+  .year10btn {
+    grid-column: 4 /span 2;
+    grid-row 1;
+  }
+  .year11btn {
+    grid-column: 6 /span 2;
+    grid-row: 1;
+  }
+  .year12btn {
+    grid-column: 3 /span 2;
+    grid-row: 2;
+  }
+  .year13btn {
+    grid-column: 5 /span 2;
+    grid-row: 2;
   }
   .logo-text {
     transform: translate(0%, 140%);
@@ -330,5 +359,11 @@
   }
   .main-text-header {
     font-size: 15vw;
+  }
+  .footer-title-text {
+    font-size: 300%;
+  }
+  .footer-text {
+    font-size: 180%;
   }
 }
