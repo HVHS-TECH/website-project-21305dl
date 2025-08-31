@@ -106,7 +106,7 @@
   grid-row: 3;
   grid-column: 1 /span 7;
   display: grid;
-  grid-template-columns: 1fr 4fr 4fr 4fr 4fr 4fr 1fr;
+  grid-template-columns: 1fr 4fr 4fr 4fr 1fr;
   grid-template-rows: 1fr;
   border: solid 3px white;
   column-gap: 1.3vw;

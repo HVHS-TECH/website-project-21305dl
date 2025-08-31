@@ -1,9 +1,13 @@
-/***CSS code copied from base style.css to save time from rewriting each line***/
+
+/***********************MAIN STYLE CODE***********************//****COPIED FROM STYLE.CSS TO SAVE TIME****/
+
 .html {
-  margin: 0px;
+  margin: 0;
+  background-color: black;
 }
 .body {
-  margin: 0px;
+  margin: 0;
+  background-color: black;
 }
 .html {
   font-size: 100px;
@@ -11,27 +15,45 @@
 .container {
   display: grid;
   grid-template-columns: 1fr 3fr 2fr 2fr 2fr 2fr 2fr;
-  grid-template-rows: 0.1fr 1.2fr 0.5fr 2fr 0.1fr;
+  grid-template-rows: 0.1fr 1fr 0.5fr 2fr 0.1fr;
   border: none;
   margin: 0px;
   padding: 0px;
 }
-.nav-logo {
+
+
+/***********************NAVIGATION BAR STYLE CODE***********************/
+
+
+.topnav {
+  background-color: black;
+  display: grid;
   grid-row: 1;
+  grid-column: 1 /span 7;
+  grid-template-columns: 1fr 3fr 2fr 2fr 2fr 2fr 2fr;
+  grid-template-rows: 1fr;
+}
+.nav-logo {
   border: solid 3px black;
   text-align: center;
   background-color: black;
   padding: 6px 7px;
 }
+.nav-logo-image {
+  height: auto;
+  width: 80%;
+}
 .nav-text-logo {
-  grid-row: 1;
   border: solid 3px black;
   text-align: left;
   font-size: 20px;
   background-color: black;
 }
+.nav-logo-text {
+  height: auto;
+  width: 70%;
+}
 .nav-year {
-  grid-row: 1;
   border: none;
   text-align: center;
   background-color: rgb(0, 0, 0);
@@ -43,6 +65,8 @@
 }
 .nav-year-text {
   transition: transform 0.4s ease;
+  height: auto;
+  width: 80%;
 }
 .nav-year-text:hover {
   transform: scale(1.1);
@@ -66,11 +90,11 @@
   color: white;
   padding: 5px 10px;
   display: block;
-  width: 10em;
+  width: 12vw;
   text-decoration: none;
   transition: background-color 0.4s ease;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 1rem;
+  font-size: 1.2vw;
 }
 .dropdown-content a:hover {
   background-color:#2C2C2C;
@@ -78,6 +102,11 @@
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+
+/***********************BODY STYLE CODE***********************/
+
+
 .title {
   grid-row: 2;
   grid-column: 1 / span 7;
@@ -90,23 +119,26 @@
   background-size: cover;
   justify-content: center;
   align-items: center;
+  z-index: -1;
 
 }
 .logo-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(0%, 150%);
   color: white;
   font-weight: 600;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 450%;
+  font-size: 600%;
 }
+
+
+/***********************BODY BUTTONS STYLE CODE***********************/
+
+
 .button-container {
   grid-row: 3;
   grid-column: 1 /span 7;
   display: grid;
-  grid-template-columns: 1fr 4fr 4fr 4fr 4fr 4fr 1fr;
+  grid-template-columns: 1fr 4fr 4fr 4fr 1fr;
   grid-template-rows: 1fr;
   border: solid 3px white;
   column-gap: 1.3vw;
@@ -127,6 +159,10 @@
   justify-content: center;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
+.year-image-button {
+  height: 100%;
+  width: 100%;
+}
 .year-button:hover{  
   transform: scale(1.05);
   opacity: 0.81;
@@ -138,6 +174,11 @@
   text-align: center;
   border: solid 3px white;
 }
+
+
+/***********************MAIN TEXT STYLE CODE***********************/
+
+
 .main-body {
   grid-column: 1 / span 7;
   grid-row: 4;
@@ -150,7 +191,7 @@
   color: black;
   font-weight: 600;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 350%;
+  font-size: 3.8vw;
 }
 .header-line {
   border-radius: 5px;
@@ -161,7 +202,7 @@
   color: black;
   font-weight: 600;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 150%;
+  font-size: 2vw;
   padding: 0;
   margin-left: 10rem;
   margin-right: 10rem;
@@ -173,6 +214,11 @@
   margin-bottom: 3rem;
   margin-top: 2rem;
 }
+
+
+/***********************FOOTER STYLE CODE***********************/
+
+
 .footer {
   background-color: black;
   grid-column: 1 /span 7;
@@ -194,4 +240,123 @@
   font-size: 120%;
   padding-right: 2rem;
   text-align: right;
+}
+
+
+/***********************MEDIA QUERIES STYLE CODE***********************/
+
+
+@media (max-width: 1000px) {
+  .dropdown-content a {
+    font-size: 1.5vw;
+    width: 12vw;
+  }
+  .logo-text {
+    transform: translate(0%, 180%);
+    font-size: 370%;
+  }
+}
+@media (max-width: 750px) {
+  .dropdown-content a {
+    font-size: 1.5vw;
+    width: 12.2vw;
+  }
+  .container {
+    grid-template-rows: 0.05fr 0.9fr 0.2fr 2fr 0.1fr;
+  }
+  .logo-text {
+    transform: translate(0%, 180%);
+    font-size: 330%;
+  }
+  .main-text {
+    font-size: 5vw;
+  }
+  .main-text-header {
+    font-size: 8vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  .topnav {
+    background-color: black;
+    display: grid;
+    grid-row: 1;
+    grid-column: 1 /span 7;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .dropdown-content {
+    text-align: center;
+    width: 90vw;
+  }
+  .dropdown-content a {
+    font-size: 6.5vw;
+    width: 94.4%;
+    height: 10vh;
+    z-index: 9;
+  }
+  .nav-ynine {
+    grid-column: 2 /span 2;
+    grid-row: 1;
+  }
+  .nav-yten {
+    grid-column: 4 /span 2;
+    grid-row: 1;
+  }
+  .nav-yeleven {
+    grid-column: 1 /span 2;
+    grid-row: 2;
+  }
+  .nav-ytwelve {
+    grid-column: 3 /span 2;
+    grid-row: 2;
+  }
+  .nav-ythirteen {
+    grid-column: 5 /span 2;
+    grid-row: 2;
+  }
+  .nav-text-logo {
+    display: none;
+  }
+  .button-container {
+    grid-template-columns: 1fr repeat(6, 4fr) 1fr;
+    grid-template-rows: 1fr;
+    padding-top: 6px;
+  }
+  .year-button {
+    padding: 4px;
+  }
+  .animals-btn {
+    grid-column: 2 /span 2;
+    grid-row: 1;
+  }
+  .chemicals-btn {
+    grid-column: 4 /span 2;
+    grid-row: 1;
+  }
+  .data-btn {
+    grid-column: 6 /span 2;
+    grid-row: 1;
+  }
+  .logo-text {
+    transform: translate(0%, 140%);
+    font-size: 500%;
+  }
+  .header-line {
+    width: 40rem;
+  }
+  .small-line {
+    width: 24rem;
+  }
+  .main-text {
+    font-size: 10vw;
+  }
+  .main-text-header {
+    font-size: 15vw;
+  }
+  .footer-title-text {
+    font-size: 300%;
+  }
+  .footer-text {
+    font-size: 180%;
+  }
 }
