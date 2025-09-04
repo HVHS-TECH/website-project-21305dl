@@ -1,16 +1,10 @@
 
 /***********************MAIN STYLE CODE***********************//****COPIED FROM STYLE.CSS TO SAVE TIME****/
-
-.html {
-  margin: 0;
-  background-color: black;
+html {
+  margin: 0px;
 }
-.body {
-  margin: 0;
-  background-color: black;
-}
-.html {
-  font-size: 100px;
+body {
+  margin: 0px;
 }
 .container {
   display: grid;

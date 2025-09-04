@@ -1,13 +1,11 @@
 
 /***********************MAIN STYLE CODE***********************/
 
-.html {
-  margin: 0;
-  background-color: black;
+html {
+  margin: 0;;
 }
-.body {
+body {
   margin: 0;
-  background-color: black;
 }
 .html {
   font-size: 100px;

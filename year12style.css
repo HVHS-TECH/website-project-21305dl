@@ -1,12 +1,9 @@
 /***CSS code copied from base style.css to save time from rewriting each line***/
-.html {
+html {
   margin: 0px;
 }
-.body {
+body {
   margin: 0px;
-}
-.html {
-  font-size: 100px;
 }
 .container {
   display: grid;

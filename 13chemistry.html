@@ -3,6 +3,7 @@
 <html>
 <head>
     <link href="13subpages.css" rel="stylesheet" type="text/css" />
+    <script src="script.js"></script>
     <link rel="icon" href="images/navigationbar/navlogoblack.png" type="image/png">
 <title>Y13 Chemistry</title>
 </head>
@@ -81,11 +82,77 @@
             <p class="main-text">ESA Study guide for Year 13 Chemistry is recommended BUT not needed.</p>
             <p class="main-text">HVHS gives the option to EITHER do 3.3 (Chemical processes) OR 3.6 (Equilibria)</p>
             <p class="main-text">If you have any further questions, email Shane Harrison (Head of Chemistry & Science)</p>
-            </div>
+        </div>
         <div class="footer">
             <h1 class="footer-title-text">Stellar Science </h1>
             <p class="footer-text">Contact 21305dl@hvhs.school.nz with any further questions</p>
             <p class="footer-text">All media assets are original and produced by Danny Lim</p>
+        </div>
+
+        <!--- QUIZ CONFIGURATION --->
+
+        <div class="config-container">
+            <h2 class="config-title">Configure the Quiz!</h2>
+
+            <div class="config-option">
+                <h4 class="option-title">Choose a topic</h4>
+                <div class="topic-options">
+                    <button class="topic-option">3.2 Spectroscopic Chemistry</button>
+                    <button class="topic-option">3.3 Chemical Processes (Report)</button>
+                    <button class="topic-option active">3.4 Thermo-Chemistry</button>
+                    <button class="topic-option">3.5 Organic Chemistry</button>
+                    <button class="topic-option">3.6 Aqueous & Equilibria Chemistry</button>
+                    <button class="topic-option">3.7 Oxidation-Reduction Chemistry</button>
+                </div>
+            </div>
+
+            <div class="config-option">
+                <h4 class="option-title">Number of Questions</h4>
+                <div class="question-options">
+                    <button class="question-option active">5</button>
+                    <button class="question-option">10</button>
+                    <button class="question-option">15</button>
+                    <button class="question-option">20</button>
+                    <button class="question-option">25</button>
+                </div>
+            </div>
+
+            <button class="start-quiz-button">Start Quiz</button>
+        </div>
+
+        <!--- QUIZ CONTAINER --->
+
+        <div class="quiz-container">
+            <header class="quiz-header">
+                <h2 class="quiz-title">Quiz</h2>
+                <div class="quiz-timer">
+
+                    <p class="time-duration">15s</p>
+                </div>
+            </header>
+            <div class="quiz-content">
+                <h1 class="question-text">In thermochemistry, what is the definition of Entropy?</h1>
+                <ul class="answer-options">
+                    <li class="answer-option">
+                        <p>The energy change of a chemical system</p>
+                    </li>
+                    <li class="answer-option">
+                        <p>The disorder/randomness of a chemical system</p>
+                    </li>
+                    <li class="answer-option">
+                        <p>The amount of energy absorbed/released in a chemical system</p>
+                    </li>
+                    <li class="answer-option">
+                        <p>The concentration of the products produced in a chemical system</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="quiz-footer">
+                <p class="question-status"><b>2</b> of <b>5</b> Questions</p>
+                <button class="next-question-btn">
+                    Next
+                </button>
+            </div>
         </div>
     </div>
 </body>
