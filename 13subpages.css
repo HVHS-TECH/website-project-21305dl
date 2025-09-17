@@ -8,7 +8,7 @@ body {
 .container {
   display: grid;
   grid-template-columns: 1fr 3fr 2fr 2fr 2fr 2fr 2fr;
-  grid-template-rows: 0.1fr 0.7fr 0.01fr 3.4fr 0.005fr 0.1fr;
+  grid-template-rows: 0.1fr 1.3fr 0.01fr 3.4fr 0.01fr 2.4fr;
   border: none;
   margin: 0px;
   padding: 0px;
@@ -203,14 +203,15 @@ body {
   text-align: right;
 }
 
-:where(.config-container, .quiz-container) {
+:where(.config-container, .quiz-container, .results-container) {
+  display: none;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   background-color:rgb(165, 165, 165);
   border-radius: 16px;
   box-shadow: 0 5px 25px rgb(170, 170, 170);
 }
 
 .config-container {
-  display: none;
   width: 87%;
   grid-row: 6;
   grid-column: 2 /span 7;
@@ -270,26 +271,33 @@ body {
   background-color: rgb(202, 202, 202);
 }
 
-.config-container .start-quiz-button {
+.config-container .start-quiz-button,
+.quiz-footer .next-question-btn,
+.results-container .try-again-btn {
   color: rgb(0, 0, 0);
   background-color: rgb(255, 255, 255);
   border: 1.6px solid rgb(49, 49, 49);
   border-radius: 14px;
   padding: 17px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 110%;
   cursor: pointer;
   transition: 0.3s ease;
 }
 
-.config-container .start-quiz-button:hover {
+.config-container .start-quiz-button:hover,
+.quiz-footer .next-question-btn:hover,
+.results-container .try-again-btn:hover {
   background-color: rgb(167, 167, 167);
 }
 
-.config-option button:hover {
-  background-color: rgb(177, 177, 177);
+.config-option button:hover,
+.quiz-content .answer-option:hover {
+  background-color: rgb(209, 209, 209);
 }
 
 .quiz-container {
+  display: block;
   grid-row: 6;
   grid-column: 2 /span 7;
   width: 89%;
@@ -297,10 +305,9 @@ body {
 
 .quiz-container .quiz-header {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 200%;
   display: flex;
   align-items: center;
-  padding: 10px 25px;
+  padding: 5px 25px;
   justify-content: space-between;
   box-shadow: 0 5px 6px rgb(0, 0, 0, 0.09);
 }
@@ -314,7 +321,11 @@ body {
   display: flex;
   width: 60px;
   color: white;
-  padding: 8px 10px;
+  padding: 5px 20px;
+  gap: 5px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1.5rem;
+  align-items: center;
   border-radius: 10px;
   background-color: rgb(39, 39, 39);
 }
@@ -337,10 +348,75 @@ body {
 }
 
 .quiz-content .answer-option {
-  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3px 12px;
   background: rgb(236, 236, 236);
   border-radius: 10px;
   font-size: 1.3rem;
   border: 1px solid gray;
   cursor: pointer;
+}
+
+.quiz-content .answer-option span {
+  display: block;
+  margin-right: 5px;
+}
+
+.quiz-content .answer-option.correct {
+  color: rgb(0, 59, 0);
+  background-color: rgb(180, 255, 180);
+  border-color: rgb(61, 221, 61);
+}
+
+.quiz-content .answer-option.incorrect {
+  color: rgb(100, 0, 0);
+  background-color: rgb(255, 206, 206);
+  border-color: rgb(255, 123, 123);
+}
+
+.quiz-container .quiz-footer {
+  padding: 12px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid gray;
+  font-size: 130%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.quiz-footer .next-question-btn {
+  background-color: white;
+}
+.quiz-footer .next-question-btn:hover {
+  background-color: gray;
+}
+
+.results-container {
+  padding: 30px;
+  grid-row: 6;
+  grid-column: 2 /span 7;
+  width: 88%;
+  text-align: center;
+  height: 70%;
+}
+
+.results-container .results-img {
+  width: 30%;
+}
+
+.results-container .results-title {
+  font-size: 2rem;
+  margin-top: 10px;
+}
+
+.results-container .results-message {
+  font-size: 1.4rem;
+  margin-top: 10px;
+}
+
+.results-container .try-again-btn {
+  margin-top: 10px;
+  padding: 20px;
 }
