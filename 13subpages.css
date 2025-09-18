@@ -212,6 +212,7 @@ body {
 }
 
 .config-container {
+  display: block;
   width: 87%;
   grid-row: 6;
   grid-column: 2 /span 7;
@@ -245,7 +246,7 @@ body {
   transition: 0.3s ease;
 }
 
-.config-option .topic-options {
+.config-option .category-options {
   display: grid;
   gap: 10px;
   grid-template-columns: repeat(2, 1fr)
@@ -297,7 +298,6 @@ body {
 }
 
 .quiz-container {
-  display: block;
   grid-row: 6;
   grid-column: 2 /span 7;
   width: 89%;
@@ -328,6 +328,7 @@ body {
   align-items: center;
   border-radius: 10px;
   background-color: rgb(39, 39, 39);
+  transition: 0.3s ease;
 }
 
 .quiz-container .quiz-content {
@@ -351,7 +352,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 3px 12px;
+  padding: 24px 12px;
   background: rgb(236, 236, 236);
   border-radius: 10px;
   font-size: 1.3rem;
@@ -388,6 +389,7 @@ body {
 
 .quiz-footer .next-question-btn {
   background-color: white;
+  visibility: hidden;
 }
 .quiz-footer .next-question-btn:hover {
   background-color: gray;

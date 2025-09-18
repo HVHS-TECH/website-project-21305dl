@@ -1,7 +1,7 @@
 // Questions sorted by category (25 each)
 const questions = [
     {
-        category: "thermochemistry",
+        category: "3.4 thermo-chemistry",
         questions: [
             {
                 question: "In thermochemistry, what is the definition of Entropy?",
@@ -207,7 +207,7 @@ const questions = [
     },
 
     {
-        category: "organics",
+        category: "3.5 organic chemistry",
         questions: [
             {
                 question: "Which reagent is commonly used to test for the presence of an alkene?",
@@ -413,7 +413,7 @@ const questions = [
     },
 
     {
-        category: "aqueous",
+        category: "3.6 aqueous & equilibria chemistry",
         questions: [
             {
                 question: "Which statement best defines dynamic equilibrium?",
@@ -619,7 +619,7 @@ const questions = [
     },
 
     {
-        category: "redox",
+        category: "3.7 oxidation-reduction chemistry",
         questions: [
             {
                 question: "Which statement defines oxidation in terms of electrons?",
@@ -825,7 +825,7 @@ const questions = [
     },
 
     {
-        category: "spectroscopy",
+        category: "3.2 spectroscopic chemistry",
         questions: [
             {
                 question: "Which of the following is the main use of spectroscopy in organic chemistry?",
@@ -1031,7 +1031,7 @@ const questions = [
     },
 
     {
-        category: "chemicalProcesses",
+        category: "3.3 chemical processes",
         questions: [
             {
                 question: "Which gas is a major contributor to acid rain?",
