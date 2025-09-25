@@ -9,7 +9,10 @@ const resultContainer = document.querySelector(".results-container");
 const QUIZ_TIME_LIMIT = 15;
 let currentTime = QUIZ_TIME_LIMIT;
 let timer = null;
-let quizCategory = "thermochemistry";
+
+////  Default quiz category and number of questions and answer settings  ////
+
+let quizCategory = "3.2 spectroscopic chemistry";
 let numberOfQuestions = 5;
 let currentQuestion = null;
 const questionsIndexHistory = [];
@@ -44,7 +47,7 @@ const startTimer = () => {
       clearInterval(timer);
       highlightCorrectAnswer();
       nextQuestionBtn.style.visibility = "visible";
-      quizContainer.querySelector(".quiz-timer").style.background = "rgba(148, 22, 22, 1)";
+      quizContainer.querySelector(".quiz-timer").style.background = "rgba(179, 20, 20, 1)";
 
       ////  Disable option selection after time runs out  ////
 

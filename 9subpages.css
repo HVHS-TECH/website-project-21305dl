@@ -8,27 +8,40 @@ body {
 .container {
   display: grid;
   grid-template-columns: 1fr 3fr 2fr 2fr 2fr 2fr 2fr;
-  grid-template-rows: 0.1fr 1.3fr 0.01fr 3.4fr 0.01fr 2.4fr;
+  grid-template-rows: 0.1fr 2.1fr 0.01fr 3.4fr 0.01fr 2.4fr;
   border: none;
   margin: 0px;
   padding: 0px;
 }
-.nav-logo {
+.topnav {
+  background-color: black;
+  display: grid;
   grid-row: 1;
+  grid-column: 1 /span 7;
+  grid-template-columns: 1fr 3fr 2fr 2fr 2fr 2fr 2fr;
+  grid-template-rows: 1fr;
+}
+.nav-logo {
   border: solid 3px black;
   text-align: center;
   background-color: black;
   padding: 6px 7px;
 }
+.nav-logo-image {
+  height: auto;
+  width: 80%;
+}
 .nav-text-logo {
-  grid-row: 1;
   border: solid 3px black;
   text-align: left;
   font-size: 20px;
   background-color: black;
 }
+.nav-logo-text {
+  height: auto;
+  width: 70%;
+}
 .nav-year {
-  grid-row: 1;
   border: none;
   text-align: center;
   background-color: rgb(0, 0, 0);
@@ -40,6 +53,8 @@ body {
 }
 .nav-year-text {
   transition: transform 0.4s ease;
+  height: auto;
+  width: 80%;
 }
 .nav-year-text:hover {
   transform: scale(1.1);
@@ -63,11 +78,11 @@ body {
   color: white;
   padding: 5px 10px;
   display: block;
-  width: 10em;
+  width: 12vw;
   text-decoration: none;
   transition: background-color 0.4s ease;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 1rem;
+  font-size: 1.2vw;
 }
 .dropdown-content a:hover {
   background-color:#2C2C2C;
@@ -80,14 +95,14 @@ body {
   grid-column: 1 / span 7;
   text-align: center;
   border: none;
-  background-image: url("images/year12header.jpeg");
+  background-image: url("images/year9headerv2.jpeg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   justify-content: center;
   align-items: center;
-
+  z-index: -1;
 }
 .logo-text {
   position: absolute;
@@ -121,16 +136,10 @@ body {
   color: black;
   font-weight: 600;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 130%;
+  font-size: 150%;
   padding: 0;
   margin-left: 10rem;
   margin-right: 10rem;
-}
-.assessment-text {
-  color: black;
-  font-weight: 600;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 180%;
 }
 .small-line {
   border-radius: 5px;
@@ -162,7 +171,6 @@ body {
   padding-right: 2rem;
   text-align: right;
 }
-
 
 /****  COPIED QUIZ CODE FROM YEAR 13 SUBPAGES CSS  ****/
 
