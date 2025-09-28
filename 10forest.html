@@ -2,9 +2,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link href="year9style.css" rel="stylesheet" type="text/css" />
+    <link href="10subpages.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="icon" href="images/navigationbar/navlogoblack.png" type="image/png">
-<title>10 Forest</title>
+<title>Y10 Forest & plants</title>
 </head>
 <body>
     <div class="container">
@@ -32,7 +33,7 @@
                 <a class="dropdown-content-text" href="10geology.html">Geology & landforms</a>
                 <a class="dropdown-content-text" href="10chemistry.html">Yr10 Chemistry</a>
                 <a class="dropdown-content-text" href="10physics.html">Yr10 Physics</a>
-                <a class="dropdown-content-text" href="10biology.html">Yr10 biology</a>
+                <a class="dropdown-content-text" href="10biology.html">Yr10 Biology</a>
             </div>
         </div>
         <div class="nav-year dropdown nav-yeleven">
@@ -62,40 +63,16 @@
         </div>
         <div class="title">
             <div class="logo-text">
-                YEAR 9 SCIENCE
-            </div>
-        </div>
-        <div class="button-container">
-            <div class="blank-left-space">
-            </div>
-            <div class="year-button">
-                <a href="year9.html"><img src="images/homepage/year9sciebuttonv3.png" class="year-image-button" height="100%" width="100%"></a>
-            </div>
-            <div class="year-button">
-                <a href="year10.html"><img src="images/homepage/year10sciebuttonv2.png" class="year-image-button" height="100%" width="100%"></a>
-            </div>
-            <div class="year-button">
-                <a href="year11.html"><img src="images/homepage/year11sciebuttonv2.png" class="year-image-button" height="100%" width="100%"></a>
-            </div>
-            <div class="year-button">
-                <a href="year12.html"><img src="images/homepage/year12sciebuttonv2.png" class="year-image-button" height="100%" width="100%"></a>
-            </div>
-            <div class="year-button">
-                <a href="year13.html"><img src="images/homepage/year13sciebuttonv2.png" class="year-image-button" height="100%" width="100%"></a>
-            </div>
-            <div class="blank-right-space">
+                FOREST & PLANTS
             </div>
         </div>
         <div class="main-body">
-            <h1 class="main-text-header">Year 9 Science</h1>
+            <h1 class="main-text-header">Year 10 Forest & plants</h1>
             <hr class="header-line">
-            <p class="main-text">Main Topics:</p>
-            <p class="main-text">Animals & Plants</p>
-            <p class="main-text">Chemical Experiments</p>
-            <p class="main-text">Data Analysis</p>
+            <p class="main-text">You will learn about the forest and plants of our world and the science behind them.</p>
             <hr class="small-line">
-            <p class="main-text">Year 9 science teaches the very basics of high school science.</p>
-            <p class="main-text">This course will teach you the basics of animal and plant biology, experiments with chemicals, and how to properly analyse data.</p>
+            <p class="main-text">Year 10 forest and plants will help build your understanding for future sciences.</p>
+            <p class="main-text">This website does not teach this course directly and only provides resources for study.</p>
             <p class="main-text">If you would like more information on the topics, please speak to your science teacher directly. </p>
             </div>
         <div class="footer">
@@ -103,6 +80,83 @@
             <p class="footer-text">Contact 21305dl@hvhs.school.nz with any further questions</p>
             <p class="footer-text">All media assets are original and produced by Danny Lim</p>
         </div>
+
+        <!--- QUIZ CONFIGURATION --->
+
+        <div class="config-container">
+            <h2 class="config-title">Configure the Quiz!</h2>
+
+            <div class="config-option">
+                <h4 class="option-title">Choose a topic</h4>
+                <div class="category-options">
+                    <button class="category-option active">Forest & plants</button>
+                </div>
+            </div>
+
+            <div class="config-option">
+                <h4 class="option-title">Number of Questions</h4>
+                <div class="question-options">
+                    <button class="question-option active">5</button>
+                    <button class="question-option">10</button>
+                    <button class="question-option">15</button>
+                    <button class="question-option">20</button>
+                    <button class="question-option">25</button>
+                </div>
+            </div>
+
+            <button class="start-quiz-button">Start Quiz</button>
+        </div>
+
+        <!--- QUIZ CONTAINER --->
+
+        <div class="quiz-container">
+            <header class="quiz-header">
+                <h2 class="quiz-title">Quiz</h2>
+                <div class="quiz-timer">
+                    <span class="material-symbols-rounded">timer</span>
+                    <p class="time-duration">15s</p>
+                </div>
+            </header>
+            <div class="quiz-content">
+                <h1 class="question-text">Question text</h1>
+                <ul class="answer-options">
+                    <li class="answer-option">
+                        <p>Option 1</p>
+                        <span class="material-symbols-rounded">cancel</span>
+                    </li>
+                    <li class="answer-option">
+                        <p>Option 2</p>
+                        <span class="material-symbols-rounded">check_circle</span>
+                    </li>
+                    <li class="answer-option">
+                        <p>Option 3</p>
+                        <span class="material-symbols-rounded">cancel</span>
+                    </li>
+                    <li class="answer-option">
+                        <p>Option 4</p>
+                        <span class="material-symbols-rounded">cancel</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="quiz-footer">
+                <p class="question-status"></p>
+                <button class="next-question-btn">
+                    Next
+                </button>
+            </div>
+        </div>
+
+        <!--- RESULTS CONTAINER --->
+
+        <div class="results-container">
+            <img src="images/quiz-complete.png" alt="Quiz Completed!" class="results-img">
+            <h2 class="results-title">Quiz Completed!</h2>
+            <p class="results-message"></p>
+            <button class="try-again-btn">Try Again</button>
+        </div>
+
+        <script src="javascript/10questions.js"></script>
+        <script src="javascript/script.js"></script>
     </div>
 </body>
 </html>

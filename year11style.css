@@ -5,6 +5,9 @@ html {
 body {
   margin: 0px;
 }
+body::-webkit-scrollbar {
+  display: none;
+}
 .container {
   display: grid;
   grid-template-columns: 1fr 3fr 2fr 2fr 2fr 2fr 2fr;
@@ -192,3 +195,130 @@ body {
   padding-right: 2rem;
   text-align: right;
 }
+
+/***********************MEDIA QUERIES STYLE CODE***********************/
+
+
+@media (max-width: 1000px) {
+  .dropdown-content a {
+    font-size: 1.5vw;
+    width: 12vw;
+  }
+  .logo-text {
+    transform: translate(0%, 180%);
+    font-size: 370%;
+  }
+}
+@media (max-width: 750px) {
+  .dropdown-content a {
+    font-size: 1.5vw;
+    width: 12.2vw;
+  }
+  .container {
+    grid-template-rows: 0.05fr 0.9fr 0.2fr 2fr 0.1fr;
+  }
+  .logo-text {
+    transform: translate(0%, 180%);
+    font-size: 330%;
+  }
+  .main-text {
+    font-size: 5vw;
+  }
+  .main-text-header {
+    font-size: 8vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  .topnav {
+    background-color: black;
+    display: grid;
+    grid-row: 1;
+    grid-column: 1 /span 7;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .dropdown-content {
+    text-align: center;
+    width: 90vw;
+  }
+  .dropdown-content a {
+    font-size: 6.5vw;
+    width: 94.4%;
+    height: 10vh;
+    z-index: 9;
+  }
+  .nav-ynine {
+    grid-column: 2 /span 2;
+    grid-row: 1;
+  }
+  .nav-yten {
+    grid-column: 4 /span 2;
+    grid-row: 1;
+  }
+  .nav-yeleven {
+    grid-column: 1 /span 2;
+    grid-row: 2;
+  }
+  .nav-ytwelve {
+    grid-column: 3 /span 2;
+    grid-row: 2;
+  }
+  .nav-ythirteen {
+    grid-column: 5 /span 2;
+    grid-row: 2;
+  }
+  .nav-text-logo {
+    display: none;
+  }
+  .button-container {
+    grid-template-columns: 1fr repeat(6, 4fr) 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-top: 6px;
+  }
+  .year-button {
+    padding: 4px;
+  }
+  .year9btn {
+    grid-column: 2 /span 2;
+    grid-row: 1;
+  }
+  .year10btn {
+    grid-column: 4 /span 2;
+    grid-row: 1;
+  }
+  .year11btn {
+    grid-column: 6 /span 2;
+    grid-row: 1;
+  }
+  .year12btn {
+    grid-column: 3 /span 2;
+    grid-row: 2;
+  }
+  .year13btn {
+    grid-column: 5 /span 2;
+    grid-row: 2;
+  }
+  .logo-text {
+    transform: translate(0%, 140%);
+    font-size: 500%;
+  }
+  .header-line {
+    width: 40rem;
+  }
+  .small-line {
+    width: 24rem;
+  }
+  .main-text {
+    font-size: 10vw;
+  }
+  .main-text-header {
+    font-size: 15vw;
+  }
+  .footer-title-text {
+    font-size: 300%;
+  }
+  .footer-text {
+    font-size: 180%;
+  }
+}
+
