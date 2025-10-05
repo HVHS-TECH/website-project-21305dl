@@ -196,14 +196,12 @@ body::-webkit-scrollbar {
 }
 
 .config-title {
-  font-style: bold;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 260%;
   color: black;
 }
 
 .config-option {
-  font-style: bold;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 180%;
   color: black;
@@ -212,7 +210,6 @@ body::-webkit-scrollbar {
 .config-option button {
   padding: 12px;
   border-radius: 10px;
-  font-style: bold;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   border: 1px solid black;
   font-size: 58%;
@@ -511,7 +508,6 @@ body::-webkit-scrollbar {
   .config-option button {
     padding: 20px;
     border-radius: 15px;
-    font-style: bold;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     border: 1px solid black;
     font-size: 100%;
