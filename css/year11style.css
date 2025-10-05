@@ -252,7 +252,7 @@ body::-webkit-scrollbar {
     font-size: 370%;
   }
 }
-@media (max-width: 750px) {
+@media (max-width: 950px) {
   .dropdown-content a {
     font-size: 1.5vw;
     width: 12.2vw;
@@ -271,7 +271,7 @@ body::-webkit-scrollbar {
     font-size: 8vw;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
   .topnav {
     background-color: black;
     display: grid;
